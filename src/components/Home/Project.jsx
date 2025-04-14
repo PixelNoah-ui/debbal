@@ -68,7 +68,7 @@ function Project() {
           ))}
         </div>
         <div className="text-center mt-6">
-          <Button type="accent" to="all">
+          <Button type="accent" to="/portfolio?category=all">
             View All Project
           </Button>
         </div>

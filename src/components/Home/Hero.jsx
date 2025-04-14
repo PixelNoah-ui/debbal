@@ -19,8 +19,10 @@ function Hero() {
               your business thrive.
             </p>
             <div className="flex flex-wrap items-center gap-5">
-              <Button type="primary">Get started</Button>
-              <Button type="secondary" to="all">
+              <Button type="primary" to="/contact">
+                Get started
+              </Button>
+              <Button type="secondary" to="/portfolio?category=all">
                 View Portfolio
               </Button>
             </div>

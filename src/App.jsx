@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import Applayout from "./layout/Applayout";
 import { lazy, Suspense } from "react";
+import PageNotFound from "./page/PageNotFound";
+import Fullspinner from "./ui/Fullspinner";
 
 const Home = lazy(() => import("./page/Home"));
 const About = lazy(() => import("./page/About"));
@@ -11,8 +13,8 @@ const Contact = lazy(() => import("./page/Contact"));
 
 function App() {
   return (
-    <BrowserRouter>
-      <Suspense fallback={<div>Loading</div>}>
+    <Suspense fallback={<Fullspinner />}>
+      <BrowserRouter>
         <Routes>
           <Route element={<Applayout />}>
             <Route path="/" element={<Home />} />
@@ -20,11 +22,12 @@ function App() {
             <Route path="/service" element={<Service />} />
             <Route path="/portfolio" element={<Porfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="8" element={<PageNotFound />} />
           </Route>
         </Routes>
-      </Suspense>
+      </BrowserRouter>
       <Toaster position="top-center" reverseOrder={false} />
-    </BrowserRouter>
+    </Suspense>
   );
 }
 

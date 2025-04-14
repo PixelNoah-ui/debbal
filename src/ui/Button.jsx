@@ -11,7 +11,7 @@ function Button({ children, type, to }) {
   };
   if (to) {
     return (
-      <Link to={`/portfolio?category=${to}`} className={styles[type]}>
+      <Link to={to} className={styles[type]}>
         {children}
       </Link>
     );
