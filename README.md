@@ -1,6 +1,7 @@
 # debbal.com — 2025 Website Redesign
 
 A complete redesign of [debbal.com](https://debbal.com) built from scratch using React and Tailwind CSS to match modern 2025 web design trends.
+#Redesgin one (debbal-pixelnoahs-projects.vercel.app)
 
 ## Features
 
@@ -20,11 +21,3 @@ A complete redesign of [debbal.com](https://debbal.com) built from scratch using
 - React Hot Toast
 - Vite (or CRA if used)
 - Deployed on Vercel
-
-## Getting Started
-
-### 1. Clone the repo
-
-`bash
-git clone https://github.com/your-username/debbal-clone.git
-cd debbal-clone
